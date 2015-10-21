@@ -88,8 +88,11 @@ void draw() {
   image(treasure,x3,y3);
   //tresure
   
-    x2=x2+5;
+  x2=x2+5;
   x2%=640;
+  if(y2<y4){
+  y2++;}
+  else{y2--;}
   image(enemy,x2,y2);
   //enemy
   
